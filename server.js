@@ -6,6 +6,8 @@ const path = require("path");
 require("dotenv").config();
 
 const connectDB = require("./config/db");
+const Router = require('./routes/router.config');
+
 const moment = require("moment");
 connectDB()
 
