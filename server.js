@@ -6,6 +6,7 @@ const path = require("path");
 require("dotenv").config();
 
 const connectDB = require("./config/db");
+const moment = require("moment");
 connectDB()
 
 let app = express();
@@ -34,8 +35,10 @@ app.use(
   })
 );
 
-app.get("/", function (req, res) {
-  res.send("Helo World,I love Coding");
+app.get("/api", function (req, res) {
+  console.log('Response in time'+moment())
+  
+  res.json("Helo World,I love Coding");
 });
 
 //server.close()
