@@ -1,9 +1,9 @@
 var express = require("express");
 var bodyparser = require("body-parser");
 
-var PORT = process.env.PORT || 5000;
 const cors = require("cors");
 const path = require("path");
+require('dotenv').config()
 
 let app = express();
 
@@ -41,6 +41,6 @@ app.get("/code", function (req, res) {
 
 
 //server.close()
-app.listen(PORT, () => {
+app.listen(P, () => {
   console.log("server listening on port " + PORT);
 });
