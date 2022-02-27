@@ -4,8 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "build": "nodemon server.js",
+    "dev": "nodemon server.js",
+    "test": "set NODE_ENV=test && mocha --reporter spec --exit --timeout 10000 tests/",
+    "test:watch": "set NODE_ENV=test && nodemon --exec \"mocha --reporter spec --exit --timeout 10000 tests/\""
   },
   "keywords": [],
   "author": "",
@@ -23,6 +25,9 @@
     "underscore": "^1.13.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "chai": "^4.3.6",
+    "mocha": "^9.2.1",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2"
   }
 }
