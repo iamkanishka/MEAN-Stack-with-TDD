@@ -18,6 +18,12 @@ This NodeJS Application consist following features(Frontend)
 To Start with this  MEAN with TDD Project, Please start with Following Steps
 
 
+
+# What I have Learnt
+1. I have got an idea on neccesary dependencies that needed to be installed for testing nodejs Application 
+2. I have learnt how to  describe the test by  adding  the required for the testibg with super test
+3. I have learnt how to fail the test with Omiting the Essentials variables to break the test and find teh loopholes 
+
 # Follow the Below Steps
 
 Note:- Before Starting with this Project, Please make sure you have installed latest stabled version of [Nodejs](https://nodejs.org/en/) Application in your System 
